@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>GTFS Builder</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="https://cdn.rawgit.com/dreamerslab/node.inflection/master/inflection.min.js"></script>
+    <script src="http://konsumer.github.io/ngInflection/dist/ngInflection.min.js"></script>
+    
+    <script src="app.js"></script>
+    <script src="app.config.js"></script>
+
+    <script src="main/main.module.js"></script>
+    <script src="main/main.component.js"></script>
+
+    <script src="agency/agency.module.js"></script>
+    <script src="agency/add-agency.component.js"></script>
+  </head>
+  <body>
+    <div ng-view></div>
+  </body>
+  </html>

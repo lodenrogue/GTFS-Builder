@@ -1,0 +1,16 @@
+.feed-container {
+	margin: 1em 0 1em 0;
+    background-color: #eeeeee;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.feed-input {
+    padding: 10px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+    margin: 1em 0 1em 0;
+    width: 25em;
+}
+

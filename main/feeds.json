@@ -1,0 +1,14 @@
+[
+	{
+		"name": "agency"
+	},
+	{
+		"name": "stops"
+	},
+	{
+		"name": "routes"
+	},
+	{
+		"name": "trips"
+	}
+]

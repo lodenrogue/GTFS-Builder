@@ -1,0 +1,42 @@
+{
+	"id": {
+		"label": "Agency Id",
+		"value": "",
+		"required": false
+	},
+	"name": {
+		"label": "Agency Name",
+		"value": "",
+		"required": true
+	},
+	"url": {
+		"label": "Agency URL",
+		"value": "",
+		"required": true
+	},
+	"timezone": {
+		"label": "Timezone",
+		"value": "",
+		"required": true
+	},
+	"language": {
+		"label": "Language",
+		"value": "",
+		"required": false
+	},
+	"phone": {
+		"label": "Agency Phone",
+		"value": "",
+		"required": false
+	},
+	"fareUrl": {
+		"label": "Fare URL",
+		"value": "",
+		"required": false
+	},
+	"email": {
+		"label": "Agency Email",
+		"value": "",
+		"required": false
+	}
+}
