@@ -1,24 +1,22 @@
 <div class="container">
 	<div ng-repeat="feed in $ctrl.feeds">
 		
-		<div class="col-xs-12 col-sm-6 col-md-4">
+		<div class="col-xs-12 col-sm-6 col-lg-4">
 			<div class="feed-container">
 				
 				<div class="row">
 					<div class="col-xs-12 feed-title text-center">
-						{{ feed.name | capitalize}}
+						{{ feed.name | titleize | replaceAll:'-':' ' }}
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-xs-12">
-						<a ng-href="#/add/{{feed.name | singularize}}"> add {{ feed.name | singularize }}</a>
+				<div class="row text-center feed-links">
+					<div class="col-xs-6">
+						<a ng-href="#/add/{{ feed.name | singularize }}"> add {{ feed.name | singularize | replaceAll:'-':' ' }}</a>
 					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-xs-12">
-						<a ng-href="#/edit/{{ feed.name }}">edit {{ feed.name | pluralize }}</a>
+					<div class="col-xs-6">
+						<a ng-href="#/edit/{{ feed.name | pluralize }}"> edit {{ feed.name | pluralize | replaceAll: '-':' ' }}</a>
 					</div>
 				</div>
 			</div>

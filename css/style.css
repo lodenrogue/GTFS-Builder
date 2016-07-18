@@ -5,6 +5,10 @@
     border-radius: 0.5em;
 }
 
+.feed-links {
+    margin-top: 1em;
+}
+
 .feed-input {
     padding: 10px;
     border: none;

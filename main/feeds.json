@@ -10,5 +10,29 @@
 	},
 	{
 		"name": "trips"
+	},
+	{
+		"name": "stop-times"
+	},
+	{
+		"name": "calendar"
+	},
+	{
+		"name": "calendar-dates"
+	},
+	{
+		"name": "fare-attributes"
+	},
+	{
+		"name": "shapes"
+	},
+	{
+		"name": "frequencies"
+	},
+	{
+		"name": "transfers"
+	},
+	{
+		"name": "feed-info"
 	}
 ]
