@@ -12,16 +12,19 @@
 		"name": "trips"
 	},
 	{
-		"name": "stop-times"
+		"name": "stop_times"
 	},
 	{
 		"name": "calendar"
 	},
 	{
-		"name": "calendar-dates"
+		"name": "calendar_dates"
 	},
 	{
-		"name": "fare-attributes"
+		"name": "fare_attributes"
+	},
+	{
+		"name": "fare_rules"
 	},
 	{
 		"name": "shapes"
@@ -33,6 +36,6 @@
 		"name": "transfers"
 	},
 	{
-		"name": "feed-info"
+		"name": "feed_info"
 	}
 ]

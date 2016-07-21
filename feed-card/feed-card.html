@@ -1,0 +1,27 @@
+<div class="feed-container">		
+	<div class="row">
+		<div class="col-xs-12 feed-title text-center">
+			{{ $ctrl.feed.name | titleize | replaceAll:'_':' ' }}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 feed-separator text-center">
+			<hr>
+		</div>
+	</div>
+
+	<div class="row text-center feed-links">
+		<a ng-href="#/add/{{ $ctrl.feed.name | singularize }}">
+			<button class="feed-button">
+				Add {{ $ctrl.feed.name | capitalize | singularize | replaceAll:'_':' ' }}
+			</button>
+		</a>
+
+		<a ng-href="#/edit/{{ $ctrl.feed.name | pluralize }}"> 
+			<button class="feed-button">
+				Edit {{ $ctrl.feed.name | capitalize | pluralize | replaceAll: '_':' ' }}
+			</button>
+		</a>
+	</div>
+</div>

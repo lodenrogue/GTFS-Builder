@@ -1,5 +1,6 @@
 'use strict'
 
 angular.module('main', [
-	'header'
+	'header',
+	'feedCard'
 ]);
