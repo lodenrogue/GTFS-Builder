@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app').
+angular.module('filters').
 	filter('replaceAll', function (){
 		return function (str, targetStr, replaceStr) {
 			if(!isNaN(str)) return str;

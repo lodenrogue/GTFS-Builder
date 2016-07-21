@@ -1,3 +1,66 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.main-header {
+    margin-top: 1em;
+}
+
+.header {
+    background-color: #253237;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.header-feature {
+    background-color: #36424a;
+    border-radius: 0.8em;
+    padding: 2.5em 0 2.5em 0;
+}
+
+@media only screen and (min-width: 768px){
+    .header-feature {
+        min-width: 340px;
+    }
+}
+
+#header-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.3em;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 0.4em;
+}
+
+@media screen and (max-width: 426px){
+    #header-title {
+        font-size: 2em;
+    }
+}
+
+.header-icon-set {
+    margin-bottom: 1.5em;
+}
+
+.header-icon {
+    height: 44px;
+    margin-left: 1.3em;
+}
+
+@media screen and (max-width: 402px){
+    .header-icon {
+        margin-left: 1em;
+    }
+}
+
+#header-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
 .feed-container {
 	margin: 1em 0 1em 0;
     background-color: #eeeeee;
