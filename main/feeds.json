@@ -1,41 +1,54 @@
 [
 	{
-		"name": "agency"
+		"name": "agency",
+		"label": "Agency"
 	},
 	{
-		"name": "stops"
+		"name": "stops",
+		"label": "Stops"
 	},
 	{
-		"name": "routes"
+		"name": "routes",
+		"label": "Routes"
 	},
 	{
-		"name": "trips"
+		"name": "trips",
+		"label": "Trips"
 	},
 	{
-		"name": "stop_times"
+		"name": "stop_times",
+		"label": "Times"
 	},
 	{
-		"name": "calendar"
+		"name": "calendar",
+		"label": "Calendar"
 	},
 	{
-		"name": "calendar_dates"
+		"name": "calendar_dates",
+		"label": "Dates"
 	},
 	{
-		"name": "fare_attributes"
+		"name": "fare_attributes",
+		"label": "Attributes"
 	},
 	{
-		"name": "fare_rules"
+		"name": "fare_rules",
+		"label": "Rules"
 	},
 	{
-		"name": "shapes"
+		"name": "shapes",
+		"label": "Shapes"
 	},
 	{
-		"name": "frequencies"
+		"name": "frequencies",
+		"label": "Frequencies"
 	},
 	{
-		"name": "transfers"
+		"name": "transfers",
+		"label": "Transfers"
 	},
 	{
-		"name": "feed_info"
+		"name": "feed_info",
+		"label": "Info"
 	}
 ]

@@ -14,13 +14,13 @@
 	<div class="row text-center feed-links">
 		<a ng-href="#/add/{{ $ctrl.feed.name | singularize }}">
 			<button class="feed-button">
-				Add
+				Add {{ $ctrl.feed.label | singularize }}
 			</button>
 		</a>
 
 		<a ng-href="#/edit/{{ $ctrl.feed.name | pluralize }}"> 
 			<button class="feed-button">
-				Edit
+				Edit {{ $ctrl.feed.label | pluralize }}
 			</button>
 		</a>
 	</div>
