@@ -4,17 +4,18 @@ body {
 
 /***** HEADER ******/
 
-.main-header {
+.main-container {
     margin-top: 1em;
+    padding: 0px;
+    background-color: white;
 }
 
 .header {
     background-color: #253237;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 5em;
-    padding-bottom: 5em;
     margin-bottom: 2em;
+    padding: 2em 0em 2em 0em;
 }
 
 .header-feature {
@@ -74,26 +75,26 @@ body {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-/****** FEED ******/
+/****** FEED CARD ******/
 
 .feeds {
     margin-top: 2em;
 }
 
-.feed-container {
+.feed-card-container {
 	margin: 1em 0 1em 0;
     background-color: #f7f7f7;
     padding: 2em 1em 1em 1em;
     border-radius: 0.5em;
 }
 
-.feed-title {
+.feed-card-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 1.5em;
 }
 
-.feed-separator > hr {
+.feed-card-separator > hr {
     margin-top: 0.8em;
     border: 0;
     height: 0;
@@ -103,11 +104,11 @@ body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.feed-links>a {
+.feed-card-links>a {
     text-decoration: none;
 }
 
-.feed-button {
+.feed-card-button {
     background-color: #607d8b;
     color: white;
     
@@ -121,12 +122,62 @@ body {
     min-width: 129px;
 }
 
-.feed-input {
-    padding: 10px;
-    border: none;
-    border-bottom: solid 2px #c9c9c9;
-    transition: border 0.3s;
-    margin: 1em 0 1em 0;
-    width: 25em;
+/****** FEED ******/
+
+.feed-container {
+    margin-top: 1em;
+    padding: 0px;
+    background-color: white;
 }
+
+.feed-content {
+    padding-left: 2em;
+}
+
+.feed-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    margin-left: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.feed-separator {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    margin-left: 0.8em;
+    margin-bottom: 2.4em;
+    width: 96%;
+}
+
+.field {
+    margin-bottom: 3em;
+}
+
+.field-name {
+    font-family: 'Roboto', sans-serif;
+}
+
+.field-input {
+    padding: 0.7em 0.5em;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.17);
+    border: solid 1px #d3d3d3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.infogram {
+   margin-left: 3em;
+   background-color: #f7f7f7;
+   padding: 3em;
+}
+
+.infogram-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 3em;
+}
+
+
 
