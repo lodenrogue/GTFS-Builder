@@ -1,0 +1,46 @@
+'use strict';
+
+angular.module('feed').
+	component('addFeed', {
+		templateUrl: "feed/add-feed.html",
+		controller: function AddFeedController($location, $http) {
+			var self = this;
+
+			$http.get("resources/feeds.json").success(function(response){
+				self.feed = getFeed(response, getFeedName());
+			});
+			
+			function getFeed(feedArray, feedName) {
+				for(var i = 0; i < feedArray.length; i++){
+					var feed = feedArray[i];
+					if(feed.name == feedName) {
+						return feed;
+						break;
+					}
+				}
+			}
+
+			function getFeedName() {
+				var path = $location.path();
+				var feed = path.substring(getPosition(path, '/', 2) + 1);
+				feed = getFeedIdentifier(feed);
+				return feed;
+			}
+
+			function getPosition(str, target, occurence) {
+   				return str.split(target, occurence).join(target).length;
+			}
+
+			function getFeedIdentifier(feed){
+				if(feed == 'agency' || feed == 'calendar' || feed == 'feed_info'){
+					return feed;
+				} 
+				else if(feed == 'frequency'){
+					return 'frequencies';
+				}
+				else {
+					return feed + 's';
+				}
+			}
+		}
+	});

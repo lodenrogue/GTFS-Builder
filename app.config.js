@@ -1,13 +1,13 @@
 angular.module('app').
 	config(['$locationProvider', '$routeProvider',
-		function config($locationProvider, $routeProvider) {
+		function config($locationProvider, $routeProvider, $routeParams) {
 
 			$routeProvider.
 				when('/', {
 					template: '<main></main>'
 				}).
-				when('/add/agency', {
-					template: '<add-agency></add-agency>'
+				when('/add/:feed', {
+					template: '<add-feed></add-feed>'
 				}).
 				when('/favicon.ico', {
 
