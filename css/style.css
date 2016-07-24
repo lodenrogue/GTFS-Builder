@@ -2,6 +2,12 @@ body {
     background-color: #f2f2f2;
 }
 
+a, a:hover, a:link, a:visited, a:active {
+    color: #607d8b;
+    text-decoration: none;
+}
+
+
 /***** HEADER ******/
 
 .main-container {
@@ -132,6 +138,11 @@ body {
 
 .feed-content {
     padding-left: 2em;
+    margin-bottom: 2em;
+}
+
+.feeds {
+    margin-bottom: 2em;
 }
 
 .feed-name {
@@ -145,9 +156,8 @@ body {
 .feed-separator {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    margin-left: 0.8em;
     margin-bottom: 2.4em;
-    width: 96%;
+    width: 97%
 }
 
 .field {
@@ -167,17 +177,77 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/****** INFOGRAM ******/
+
 .infogram {
    margin-left: 3em;
    background-color: #f7f7f7;
    padding: 3em;
+   margin-bottom: 2em;
+}
+
+.infogram-user-icon {
+    margin-right: 0.5em;
+    margin-bottom: 0.2em;
 }
 
 .infogram-title {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
-    margin-bottom: 3em;
+    margin-bottom: 1.6em;
 }
 
+.infogram-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95em;
+    margin-bottom: 1.3em;
+}
 
+.infogram-instructions {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95em;
+    margin-top: 0.3em;
+    margin-bottom: 1.3em;
+    line-height: 1.7em;
+}
 
+.infogram-button {
+    background-color: #607d8b;
+    color: white;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 0.95em;
+    
+    border: 0px;
+    border-radius: 5px;
+    padding: 1em;
+    min-width: 129px;
+}
+
+.infogram-separator {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    margin-top: 3em;
+    margin-left: 0.8em;
+    margin-bottom: 1em;
+    width: 96%;
+}
+
+.infogram-help-icon {
+    margin-bottom: 0.2em;
+    margin-right: 0.2em;
+}
+
+/****** FEED FOOTER ******/
+
+.feed-footer {
+    padding-left: 2em;
+}
+
+.feed-footer-separator {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 1em;
+    width: 97%;
+}
