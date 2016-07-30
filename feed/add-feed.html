@@ -13,7 +13,7 @@
 		<!-- FEED NAME -->
 		<div class="row">
 			<div class="col-xs-12 feed-name">
-				{{ $ctrl.feed.name | singularize | replaceAll:'_':' ' | titleize }}
+				{{ $ctrl.feed.name | replaceAll:'_':' '| singularize | titleize }}
 			</div>
 		</div>
 		<!-- /FEED NAME -->
@@ -35,9 +35,72 @@
 						{{ field.label }}
 					</div>
 
+					<!-- TEXT INPUT -->
 					<div class="col-xs-8">
-						<input class="field-input" name="{{ field.name }}" />
+						<input ng-show="field.type == 'text'" class="field-input" name="{{ field.name }}" />
 					</div>
+					<!-- /TEXT INPUT -->
+
+					<!-- URL -->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'url'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /URL -->
+
+					<!-- OPTION -->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'option'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /OPTION -->
+
+					<!-- PHONE -->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'phone'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /PHONE -->
+
+					<!-- EMAIL -->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'email'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /EMAIL -->
+
+					<!-- DECIMAL -->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'decimal'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /DECIMAL -->
+
+					<!-- DATA OPTION -->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'data-option'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /DATA OPTION -->
+
+					<!-- HEX COLOR -->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'hex-color'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /HEX COLOR -->
+
+					<!-- TIME-->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'time'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /TIME -->
+
+					<!-- INTEGER -->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'integer'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /INTEGER -->
+
+					<!-- DATE -->
+					<div class="col-xs-8">
+						<input ng-show="field.type == 'date'" class="field-input" name="{{ field.name }}" />
+					</div>
+					<!-- /DATE -->
+
 				</div>
 			</div>
 			<!-- /FIELDS -->
