@@ -1,0 +1,56 @@
+{  
+    "name":"transfers",
+    "label":"Transfers",
+    "fields":[  
+        {  
+            "name":"from_stop_id",
+            "label":"From Stop ID",
+            "type":"data-option",
+            "required":true,
+            "data-option":{
+                "feed":"stops",
+                "field":"stop_id"
+            }
+        },
+        {  
+            "name":"to_stop_id",
+            "label":"To Stop ID",
+            "type":"data-option",
+            "required":true,
+            "data-option":{
+                "feed":"stops",
+                "field":"stop_id"
+            }
+        },
+        {  
+            "name":"transfer_type",
+            "label":"Transfer Type",
+            "type":"option",
+            "required":true,
+            "options":[
+                {
+                    "name":"This is a recommended transfer point between two routes",
+                    "value":0
+                },
+                {
+                    "name":"This is a timed transfer point between two routes",
+                    "value":1
+                },
+                {
+                    "name":"This transfer requires a minimum amount of time between arrival and departure to ensure a connection",
+                    "value":2
+                },
+                {
+                    "name":"Transfers are not possible between routes at this location",
+                    "value":3
+                }
+            ]
+        },
+        {  
+            "name":"min_transfer_time",
+            "label":"Minimum Transfer Time",
+            "type":"integer",
+            "required":false
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{  
+    "name":"trips",
+    "label":"Trips",
+    "fields":[  
+        {  
+            "name":"route_id",
+            "label":"Route ID",
+            "type":"data-option",
+            "required":true,
+            "data-option": {
+                "feed":"routes",
+                "field":"route_id"
+            }
+        },
+        {  
+            "name":"service_id",
+            "label":"Service ID",
+            "type":"data-option",
+            "required":true,
+            "data-options": {
+                "feed":"calendar|calendar_dates",
+                "field":"service_id"
+            }
+        },
+        {  
+            "name":"trip_id",
+            "label":"Trip ID",
+            "type":"text",
+            "required":true
+        },
+        {  
+            "name":"trip_headsign",
+            "label":"Trip Headsign",
+            "type":"text",
+            "required":false
+        },
+        {  
+            "name":"trip_short_name",
+            "label":"Trip Short Name",
+            "type":"text",
+            "required":false
+        },
+        {  
+            "name":"direction_id",
+            "label":"Direction ID",
+            "type":"option",
+            "required":false,
+            "options":[
+                {
+                    "name":"Travel in one direction (outbound travel)",
+                    "value":0
+                },
+                {
+                    "name":"Travel in the opposite direction (inbound travel)",
+                    "value":1
+                }
+            ]
+        },
+        {  
+            "name":"block_id",
+            "label":"Block ID",
+            "type":"text",
+            "required":false
+        },
+        {  
+            "name":"shape_id",
+            "label":"Shape ID",
+            "type":"data-option",
+            "required":false,
+            "data-option":{
+                "feed":"shapes",
+                "field":"shape_id"
+            }
+        },
+        {  
+            "name":"wheelchair_accessible",
+            "label":"Wheelchair Accessible",
+            "type":"option",
+            "required":false,
+            "options": [
+                {
+                    "name":"Yes",
+                    "value":1
+                },
+                {
+                    "name":"No",
+                    "value":2
+                }
+            ]
+        },
+        {  
+            "name":"bikes_allowed",
+            "label":"Bikes Allowed",
+            "type":"option",
+            "required":false,
+            "options": [
+                {
+                    "name":"Yes",
+                    "value":1
+                },
+                {
+                    "name":"No",
+                    "value":2
+                }
+            ]
+        }
+    ]
+}

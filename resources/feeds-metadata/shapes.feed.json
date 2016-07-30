@@ -1,0 +1,36 @@
+{  
+    "name":"shapes",
+    "label":"Shapes",
+    "fields":[  
+        {  
+            "name":"shape_id",
+            "label":"Shape ID",
+            "type":"text",
+            "required":true
+        },
+        {  
+            "name":"shape_pt_lat",
+            "label":"Shape Point Latitude",
+            "type":"decimal",
+            "required":true
+        },
+        {  
+            "name":"shape_pt_lon",
+            "label":"Shape Point Longitude",
+            "type":"decimal",
+            "required":true
+        },
+        {  
+            "name":"shape_pt_sequence",
+            "label":"Shape Point Sequence",
+            "type":"integer",
+            "required":true
+        },
+        {  
+            "name":"shape_dist_traveled",
+            "label":"Shape Distance Traveled",
+            "type":"decimal",
+            "required":false
+        }
+    ]
+}

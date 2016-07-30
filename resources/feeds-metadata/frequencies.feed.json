@@ -1,0 +1,50 @@
+{  
+    "name":"frequencies",
+    "label":"Frequencies",
+    "fields":[  
+        {  
+            "name":"trip_id",
+            "label":"Trip ID",
+            "type":"data-option",
+            "required":true,
+            "data-option":{
+                "feed":"trips",
+                "field":"trip_id"
+            }
+        },
+        {  
+            "name":"start_time",
+            "label":"Start Time",
+            "type":"time",
+            "required":true
+        },
+        {  
+            "name":"end_time",
+            "label":"End Time",
+            "type":"time",
+            "required":true
+        },
+        {  
+            "name":"headway_secs",
+            "label":"Headway Seconds",
+            "type":"integer",
+            "required":true
+        },
+        {  
+            "name":"exact_times",
+            "label":"Exact Times",
+            "type":"option",
+            "required":false,
+            "options":[
+                {
+                    "name":"No",
+                    "value":0
+                },
+                {
+                    "name":"Yes",
+                    "value":1
+                }
+            ]
+        }
+    ]
+}

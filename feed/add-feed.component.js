@@ -6,15 +6,18 @@ angular.module('feed').
 		controller: function AddFeedController($location, $http) {
 			var self = this;
 
-			$http.get("resources/feeds.json").success(function(response){
-				self.feed = getFeed(response, getFeedName());
+			$http.get("resources/feeds-metadata/feeds.json").success(function(response){
+				getFeed(response, getFeedName());
 			});
 			
 			function getFeed(feedArray, feedName) {
 				for(var i = 0; i < feedArray.length; i++){
 					var feed = feedArray[i];
 					if(feed.name == feedName) {
-						return feed;
+						console.log(feed.fileName);
+						$http.get("resources/feeds-metadata/" + feed.fileName).success(function(response){
+							self.feed = response;
+						})
 						break;
 					}
 				}

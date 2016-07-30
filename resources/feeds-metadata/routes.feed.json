@@ -1,0 +1,98 @@
+{  
+    "name":"routes",
+    "label":"Routes",
+    "fields":[  
+        {  
+            "name":"route_id",
+            "label":"Route ID",
+            "type":"text",
+            "required":true
+        },
+        {  
+            "name":"agency_id",
+            "label":"Agency ID",
+            "type":"data-option",
+            "required":false,
+            "data-option": {
+                "feed":"agency",
+                "field":"agency_id"
+            }
+        },
+        {  
+            "name":"route_short_name",
+            "label":"Route Short Name",
+            "type":"text",
+            "required":true
+        },
+        {  
+            "name":"route_long_name",
+            "label":"Route Long Name",
+            "type":"text",
+            "required":true
+        },
+        {  
+            "name":"route_desc",
+            "label":"Route Description",
+            "type":"text",
+            "required":false
+        },
+        {  
+            "name":"route_type",
+            "label":"Route Type",
+            "type":"option",
+            "required":true,
+            "options": [
+                {
+                    "name":"Tram, Streetcar, or Light rail",
+                    "value":0
+                },
+                {
+                    "name":"Subway or Metro",
+                    "value":1
+                },
+                {
+                    "name":"Rail",
+                    "value":2
+                }, 
+                {
+                    "name":"Bus",
+                    "value":3
+                },
+                {
+                    "name":"Ferry",
+                    "value": 4
+                },
+                {
+                    "name":"Cable car",
+                    "value":5
+                },
+                {
+                    "name":"Gandola or Suspended cable car",
+                    "value":6
+                },
+                {
+                    "name":"Funicular",
+                    "value":7
+                }
+            ]
+        },
+        {  
+            "name":"route_url",
+            "label":"Route URL",
+            "type":"url",
+            "required":false
+        },
+        {  
+            "name":"route_color",
+            "label":"Route Color",
+            "type":"hex-color",
+            "required":false
+        },
+        {  
+            "name":"route_text_color",
+            "label":"Route Text Color",
+            "type":"hex-color",
+            "required":false
+        }
+    ]
+}

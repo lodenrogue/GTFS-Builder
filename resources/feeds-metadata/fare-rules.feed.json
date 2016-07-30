@@ -1,0 +1,56 @@
+{  
+    "name":"fare_rules",
+    "label":"Rules",
+    "fields":[  
+        {  
+            "name":"fare_id",
+            "label":"Fare ID",
+            "type":"data-option",
+            "required":true,
+            "data-option":{
+                "feed":"fare_attributes",
+                "field":"fare_id"
+            }
+        },
+        {  
+            "name":"route_id",
+            "label":"Route ID",
+            "type":"data-option",
+            "required":false,
+            "data-option":{
+                "feed":"routes",
+                "field":"route_id"
+            }
+        },
+        {  
+            "name":"origin_id",
+            "label":"Origin ID",
+            "type":"data-option",
+            "required":false,
+            "data-option":{
+                "feed":"stops",
+                "field":"zone_id"
+            }
+        },
+        {  
+            "name":"destination_id",
+            "label":"Destination ID",
+            "type":"data-option",
+            "required":false,
+            "data-option":{
+                "feed":"stops",
+                "field":"zone_id"
+            }
+        },
+        {  
+            "name":"contains_id",
+            "label":"Contains ID",
+            "type":"data-option",
+            "required":false,
+            "data-option":{
+                "feed":"stops",
+                "field":"zone_id"
+            }
+        }
+    ]
+}

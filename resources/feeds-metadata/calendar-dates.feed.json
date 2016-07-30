@@ -1,0 +1,34 @@
+{  
+    "name":"calendar_dates",
+    "label":"Dates",
+    "fields":[  
+        {  
+            "name":"service_id",
+            "label":"Service ID",
+            "type":"text",
+            "required":true
+        },
+        {  
+            "name":"date",
+            "label":"Date",
+            "type":"date",
+            "required":true
+        },
+        {  
+            "name":"exception_type",
+            "label":"Exception Type",
+            "type":"option",
+            "required":true,
+            "options":[
+                {
+                    "name":"Service has been added for the specified date",
+                    "value":1
+                },
+                {
+                    "name":"Service has been removed for the specified date",
+                    "value":2
+                }
+            ]
+        }
+    ]
+}

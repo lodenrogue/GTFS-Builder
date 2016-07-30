@@ -1,0 +1,120 @@
+{  
+    "name":"stop_times",
+    "label":"Times",
+    "fields":[  
+        {  
+            "name":"trip_id",
+            "label":"Trip ID",
+            "type":"data-option",
+            "required":true,
+            "data-option":{
+                "feed":"trips",
+                "fields":"trip_id"
+            }
+        },
+        {  
+            "name":"arrival_time",
+            "label":"Arrival Time",
+            "type":"time",
+            "required":true
+        },
+        {  
+            "name":"departure_time",
+            "label":"Departure Time",
+            "type":"time",
+            "required":true
+        },
+        {  
+            "name":"stop_id",
+            "label":"Stop ID",
+            "type":"data-option",
+            "required":true,
+            "data-option":{
+                "feed":"stops",
+                "field":"stop_id"
+            }
+        },
+        {  
+            "name":"stop_sequence",
+            "label":"Stop Sequence",
+            "type":"integer",
+            "required":true
+        },
+        {  
+            "name":"stop_headsign",
+            "label":"Stop Headsign",
+            "type":"text",
+            "required":false
+        },
+        {  
+            "name":"pickup_type",
+            "label":"Pickup Type",
+            "type":"option",
+            "required":false,
+            "options":[
+                {
+                    "name":"Regularly scheduled pickup",
+                    "value":0
+                },
+                {
+                    "name":"No pickup available",
+                    "value":1
+                },
+                {
+                    "name":"Must phone agency to arrange pickup",
+                    "value":2
+                },
+                {
+                    "name":"Must coordinate with driver to arrange pickup",
+                    "value":3
+                }
+            ]
+        },
+        {  
+            "name":"drop_off_type",
+            "label":"Drop Off Type",
+            "type":"option",
+            "required":false,
+            "options":[
+                {
+                    "name":"Regularly scheduled drop off",
+                    "value":0
+                },
+                {
+                    "name":"No drop off available",
+                    "value":1
+                },
+                {
+                    "name":"Must phone agency to arrange drop off",
+                    "value":2
+                },
+                {
+                    "name":"Must coordinate with driver to arrange drop off",
+                    "value":3
+                }
+            ]
+        },
+        {  
+            "name":"shape_dist_traveled",
+            "label":"Shape Distance Travelled",
+            "type":"decimal",
+            "required":false
+        },
+        {  
+            "name":"timepoint",
+            "label":"Timepoint",
+            "type":"option",
+            "required":false,
+            "options":[
+                {
+                    "name":"Times are considered approximate",
+                    "value":0
+                },
+                {
+                    "name":"Times are considered exact",
+                    "value":1
+                }
+            ]
+        }
+    ]
+}

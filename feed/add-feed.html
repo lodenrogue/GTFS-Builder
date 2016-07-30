@@ -13,7 +13,7 @@
 		<!-- FEED NAME -->
 		<div class="row">
 			<div class="col-xs-12 feed-name">
-				{{ $ctrl.feed.name | singularize | capitalize }}
+				{{ $ctrl.feed.name | singularize | replaceAll:'_':' ' | titleize }}
 			</div>
 		</div>
 		<!-- /FEED NAME -->

@@ -207,7 +207,7 @@ a, a:hover, a:link, a:visited, a:active {
     font-family: 'Roboto', sans-serif;
     font-size: 0.95em;
     margin-top: 0.3em;
-    margin-bottom: 1.3em;
+    margin-bottom: 3em;
     line-height: 1.7em;
 }
 
@@ -228,7 +228,7 @@ a, a:hover, a:link, a:visited, a:active {
 .infogram-separator {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    margin-top: 3em;
+    margin-top: 2em;
     margin-left: 0.8em;
     margin-bottom: 1em;
     width: 96%;
